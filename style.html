@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(6, 6, 60);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            nav {
+                display: flex;
+                align-items: center;
+                width: 400px;
+                height: 700px;
+                background-color: rgb(6, 5, 31);
+
+            }
+        }
+        @media only screen and (max-width: 400px) {
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+                width: 400px;
+                height: 700px;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+
+            nav ul li {
+                list-style: none;
+                margin: 0 23px;
+                height: 700px;
+                width: 400px;
+            }
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            nav ul li a :hover {
+                color: rgb(0, 0, 0);
+
+            }
+
+            main hr {
+                border: 0;
+                background: rgb(174, 174, 248);
+                height: 1.2px;
+                margin: 60px 84px;
+
+            }
+
+            .left {
+                font-size: 1.8rem;
+            }
+
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 140px 0;
+            }
+
+            .firstsection>div {
+                width: 30px 0;
+
+            }
+
+            .leftsection {
+                font-size: 3rem;
+
+            }
+
+            .rightSection img {
+                height: 450px;
+                width: 450px;
+                margin: 50px 0;
+            }
+
+            .purple {
+                color: rgb(206, 163, 247);
+            }
+
+            .text-gray {
+                color: gray;
+                font-size: 1rem;
+            }
+
+            #element {
+                color: rgb(206, 163, 247);
+            }
+
+            .secondsection {
+                max-width: 80vw;
+                margin: auto;
+                height: 80vh;
+            }
+
+            .secondsection h1 {
+                font-size: 4rem;
+            }
+
+            .secondsection .box {
+                background: white;
+                width: 80vw;
+                height: 2px;
+                margin: 56px 0;
+            }
+
+            .secondsection .card-title {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: last baseline;
+                font-size: 3rem;
+            }
+
+            .secondsection .card-text {
+                display: flex;
+                font-size: 1.5rem;
+                justify-content: space-around;
+            }
+
+            footer {
+                background-color: rgb(6, 5, 31);
+                height: 190px;
+            }
+
+            .footer {
+                display: flex;
+                padding: 23px 123px;
+            }
+
+            .footer-first {
+                font-size: 30px;
+            }
+
+            .footer-second {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 23px 123px;
+                align-items: center;
+                font-size: 20px;
+
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shafee Md Faizan</div>
+            <div class="right">
+
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is<span class="purple"> Shafee Md Faizan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what I have done so far</span>
+            <h1>Experience</h1>
+
+
+            <div class="card" style="width: 50rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Shaish Info Sloution</h5>
+                    <p class="card-text">Developed a website that enhance decision support for farmers that would
+                        contribute to irrigation management decisions. It also be possible to conveniently analyze the
+                        data and infer valuable insights for them.So we have
+                        implemented client side encryption/decryption as an
+                        attractive solution to protect data security.</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Shafee Md Faizan Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Project</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Front End Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

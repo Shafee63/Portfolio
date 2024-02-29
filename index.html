@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(6, 6, 60);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 88px;
+            background-color: rgb(6, 5, 31);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .right :hover{
+            color: rgb(150, 20, 237);
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a :hover {
+            color: rgb(0, 0, 0);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(174, 174, 248);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        img {
+            border-radius: 50%; 
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstsection>div {
+            width: 30px 0;
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .buttons {
+            padding: 30px;
+        }
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(59, 18, 97);
+            color: white;
+            border: 2px solid rgb(214, 195, 235);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            height: 450px;
+            width: 450px;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(206, 163, 247);
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1rem;
+        }
+
+        #element {
+            color: rgb(206, 163, 247);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 4rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .secondsection .card-title {
+            display: flex;
+            padding-top: 30px;
+            font-size: 3rem;
+        }
+
+        .secondsection .card-text {
+            /* display: flex; */
+            padding-top: 27px;
+            font-size: 1.8rem;
+        }
+
+        footer {
+            background-color: rgb(6, 5, 31);
+            height: 190px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 123px;
+        }
+
+        .footer-first {
+            font-size: 30px;
+        }
+
+        .footer-second{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            font-size: 20px;
+            margin: 0 23px;
+            list-style: none;
+
+
+        }
+        .footer-second :hover{
+            color: rgb(210, 192, 227);
+        }
+
+        @media screen and (max-width: 420px) {
+            nav {
+               text-align: center;
+               justify-content: center;
+               display: block;
+               padding: 30px;
+            }
+            nav .left {
+                font-size: 20px;
+            }
+            nav ul {
+                /* display: block; */
+                position: relative;
+                padding: 30px;
+            }
+            nav ul li {
+                list-style: none;
+                margin: 0 10px;
+                font-size: 13px;
+                text-align: center;
+                justify-content: center;
+            }
+            .firstsection {
+                display: block;
+            }
+            img {
+                max-height: 240px;
+                max-width: 240px;
+                display: block;
+                padding: 0px 40px;
+            }
+            .leftsection {
+                padding: 20px;
+                font-size: 26px;
+            }
+            .leftsection .btn {
+                font-size: 14px;
+            }
+            .secondsection h1 {
+                font-size: 30px;
+                padding-top: 20px;
+            }
+            .card .card-title {
+                padding-top: 10px;
+                font-size: 25px;
+                float: left;
+            }
+            .card .card-text {
+                /* float: left; */
+                font-size: 16px;
+                width: 300px;
+                padding-top: 60px;
+            }
+            .flex h3 {
+                font-size: 20px;
+                padding: 25px;
+            }
+            .footer-second {
+                font-size: 16px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shafee Md Faizan</div>
+            <div class="right">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Contact us.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="rightSection">
+                <img src="Shafee Faizan.jpeg" alt="">
+            </div>
+            <div class="leftsection">
+                Hi,My name is<span class="purple"> Shafee Md Faizan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons"></div>
+                <button class="btn" >Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+            
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what I have done so far</span>
+            <h1>Experience</h1>
+
+
+            <div class="card" style="width: 50rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Shaish Info Solution</h5>
+                    <p class="card-text">Developed a website that enhance decision support for farmers that would
+                        contribute to irrigation management decisions. It also be possible to conveniently analyze the
+                        data and infer valuable insights for them.So we have
+                        implemented client side encryption/decryption as an
+                        attractive solution to protect data security.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Shafee Md Faizan Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Front End Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
